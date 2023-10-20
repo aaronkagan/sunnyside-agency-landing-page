@@ -33,8 +33,6 @@ body {
 /***  Header Mobile ***/
 
 .header {
-  /* To prevent margin collapse */
-  padding: 0.01px;
   /* background-color: #4abdf2; */
   min-height: 100vh;
   background-image: url(./images/mobile/image-header.jpg);
@@ -53,7 +51,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 3.2rem;
+  padding-top: 3.2rem;
   position: relative;
 }
 
