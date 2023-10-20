@@ -1,6 +1,6 @@
-const burger = document.querySelector('.hamburger-cont');
-const hiddenMenu = document.querySelector('.nav-links');
+const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+const mobileMenu = document.querySelector('.mobile-menu');
 
-burger.addEventListener('click', () => {
-  hiddenMenu.classList.toggle('hidden');
+mobileMenuIcon.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
 });
