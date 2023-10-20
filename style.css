@@ -1,10 +1,14 @@
 /*** CSS Reset ***/
 
+/* 
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; 
+
+*/
+
 * {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  font-family: sans-serif;
   color: inherit;
   box-sizing: border-box;
 }
@@ -22,6 +26,8 @@ html {
 
 body {
   height: 100vh;
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
 }
 
 /***  Header Mobile ***/
@@ -39,7 +45,7 @@ body {
 }
 
 .wrapper {
-  max-width: 95%;
+  max-width: 95vw;
   margin: 0 auto;
 }
 
@@ -62,16 +68,20 @@ body {
 .mobile-menu {
   position: absolute;
   background-color: white;
-  width: 95%;
-  left: 2.5%;
+  width: 100%;
   list-style-type: none;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 3rem 0;
   gap: 1.2rem;
   color: #808397;
   top: calc(100% + 5rem);
   transition: opacity 0.3s ease;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: -0.143px;
 }
 
 .hidden {
@@ -83,10 +93,42 @@ body {
   background-color: #fbd600;
   padding: 1.6rem 3.2rem;
   cursor: pointer;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  color: #24303e;
 }
 
 .cta:hover,
 .cta:focus {
   background-color: #77cef5;
   color: white;
+}
+
+/*** Header Desktop ***/
+
+@media screen and (min-width: 1440px) {
+  .mobile-menu-icon {
+    visibility: hidden;
+  }
+
+  .top-nav {
+    margin-top: 3.4rem;
+  }
+
+  .mobile-menu {
+    opacity: 1;
+    position: unset;
+    background-color: unset;
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: -0.129px;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 7.9rem;
+  }
+
+  .cta {
+    background-color: white;
+    color: #24303e;
+  }
 }
