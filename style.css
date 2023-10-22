@@ -401,6 +401,19 @@ img {
   margin-top: 0.9rem;
 }
 
+/*** Testimonials Section Desktop ***/
+
+@media screen and (min-width: 768px) {
+  .testimonials {
+    padding: 16rem;
+  }
+  .testimonials .container {
+    flex-direction: row;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
 /*** Gallery Section Mobile ***/
 
 .gallery .container {
