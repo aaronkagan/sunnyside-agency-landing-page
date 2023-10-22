@@ -170,6 +170,11 @@ img {
 
 .img-mobile {
   width: 100%;
+  display: block;
+}
+
+.img-desktop {
+  display: none;
 }
 
 .mission-section-text-box {
@@ -221,8 +226,6 @@ img {
 
 .graphic-design-container div,
 .photography-container div {
-  margin: 0 auto;
-  max-width: 90%;
   text-align: center;
   color: #24554a;
 }
@@ -244,6 +247,8 @@ img {
   margin-bottom: 6rem;
   font-weight: 600;
   color: #19536c;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
 }
 
 .graphic-design-container {
@@ -257,4 +262,81 @@ img {
 /*** Mission Section Desktop ***/
 
 @media screen and (min-width: 768px) {
+  .mission-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: '1 2' '3 4' '5 6';
+  }
+
+  .mission-section-grid .cell-2 {
+    grid-area: 1;
+  }
+
+  .mission-section-grid div,
+  .mission-section-grid img {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .img-mobile {
+    /* width: 100%; */
+    display: none;
+  }
+
+  .img-desktop {
+    max-width: unset;
+    display: inline-block;
+  }
+
+  .graphic-design-container {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+  }
+
+  .photography-container {
+    background-image: url(images/desktop/image-photography.jpg);
+  }
+
+  .mission-section-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 50%;
+    margin: 0 auto;
+    min-height: 100%;
+  }
+
+  .mission-section-text-box h2 {
+    text-align: left;
+  }
+
+  .mission-section-text-box p {
+    text-align: left;
+  }
+  .mission-section-text-box a {
+    text-align: left;
+  }
+
+  .graphic-design-container div,
+  .photography-container div {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .graphic-design-container h2,
+  .photography-container h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.8rem;
+    letter-spacing: -0.2px;
+    font-weight: 900;
+    padding-top: 60rem;
+    margin-top: unset;
+  }
+
+  .graphic-design-container p,
+  .photography-container p {
+    line-height: 2.7rem;
+    letter-spacing: -0.114px;
+    font-weight: 600;
+    color: #19536c;
+  }
 }
