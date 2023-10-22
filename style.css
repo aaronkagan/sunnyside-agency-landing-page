@@ -400,3 +400,21 @@ img {
   letter-spacing: -0.1px;
   margin-top: 0.9rem;
 }
+
+/*** Gallery Section Mobile ***/
+
+.gallery .container {
+  display: grid;
+}
+
+.gallery .container img {
+  width: 100%;
+}
+
+/*** Gallery Section Desktop ***/
+
+@media screen and (min-width: 768px) {
+  .gallery .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
