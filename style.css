@@ -224,8 +224,8 @@ section.mission {
   position: absolute;
   border-radius: 999px;
   bottom: 0;
-  right: 50%;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
   opacity: 0.25;
 }
@@ -310,6 +310,11 @@ section.mission {
 
   .img-desktop {
     display: block;
+  }
+
+  .cell-content a::after {
+    left: -0.925rem;
+    transform: translateX(0);
   }
 }
 
