@@ -350,8 +350,17 @@ section.mission {
   margin-bottom: 8.8rem;
 }
 
+.footer-nav-link:hover {
+  color: white;
+}
+
 .footer-social-nav-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 2.5rem;
+}
+
+.footer-social-nav-link:hover path {
+  fill: white;
 }
