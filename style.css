@@ -161,3 +161,69 @@ img {
     letter-spacing: 8.75px;
   }
 }
+
+/*** Mission Section Mobile ***/
+
+section.mission {
+  display: grid;
+}
+
+.mission img {
+  width: 100%;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.cell-content {
+  display: flex;
+  flex-direction: column;
+  padding: 15rem 5%;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  gap: 3rem;
+  min-height: 100%;
+}
+
+.overlay-cell {
+  position: relative;
+}
+
+.overlay-cell-content {
+  position: absolute;
+  bottom: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 15%;
+}
+
+/*** Mission Section Desktop ***/
+
+@media screen and (min-width: 768px) {
+  section.mission {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cell-content {
+    justify-content: center;
+    padding: 0 25%;
+    text-align: left;
+  }
+
+  .cell.cell-2 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
+  }
+}
