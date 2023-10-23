@@ -34,6 +34,10 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /***  Header Mobile ***/
 
 .header {
@@ -179,12 +183,55 @@ section.mission {
 .cell-content {
   display: flex;
   flex-direction: column;
-  padding: 15rem 5%;
+  padding: 15rem 5rem;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
   gap: 3rem;
   min-height: 100%;
+}
+
+.cell-content h2 {
+  font-size: 3.2rem;
+  font-family: 'Fraunces', serif;
+  color: #24303e;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.229px;
+}
+
+.cell-content p {
+  font-size: 1.8rem;
+  color: #808397;
+  line-height: 3rem;
+}
+
+.cell-content a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Fraunces', serif;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  position: relative;
+}
+
+.cell-content a::after {
+  content: '';
+  background-color: #fad400;
+  width: 13.7rem;
+  height: 1rem;
+  position: absolute;
+  border-radius: 999px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.25;
+}
+
+.cell-4 .cell-content a::after {
+  background-color: #fe7766;
 }
 
 .overlay-cell {
@@ -193,12 +240,51 @@ section.mission {
 
 .overlay-cell-content {
   position: absolute;
-  bottom: 15%;
+  top: 65%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 0 15%;
+  gap: 2.7rem;
+  padding: 0 10%;
+}
+
+.overlay-cell-content h2 {
+  font-family: 'Fraunces', serif;
+  color: #24554a;
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+}
+
+.overlay-cell-content p {
+  color: #24554a;
+  line-height: 2.7rem;
+  letter-spacing: -0.114px;
+}
+
+/*** Mission Section Half Screen ***/
+
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  .cell-content {
+    padding: 0 5rem;
+    gap: 1rem;
+  }
+
+  .cell-content h2 {
+    font-size: 2.5rem;
+  }
+  .cell-content p {
+    font-size: 1.6rem;
+  }
+
+  .overlay-cell-content {
+    top: 55%;
+    gap: 1rem;
+  }
+
+  .overlay-cell-content p {
+    font-size: 1.4rem;
+  }
 }
 
 /*** Mission Section Desktop ***/
@@ -210,7 +296,6 @@ section.mission {
 
   .cell-content {
     justify-content: center;
-    padding: 0 25%;
     text-align: left;
   }
 
@@ -225,6 +310,24 @@ section.mission {
 
   .img-desktop {
     display: block;
+  }
+
+  .cell-content a::after {
+    left: -0.925rem;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 1351px) {
+  .cell-content {
+    padding: 0 25%;
+  }
+  .overlay-cell-content {
+    padding: 0 30%;
+    top: 60%;
+  }
+  .overlay-cell-content p {
+    font-size: 1.6rem;
   }
 }
 
@@ -270,6 +373,7 @@ section.mission {
   line-height: 3.2rem;
   letter-spacing: -0.129px;
   margin: 3.2rem 0;
+  max-width: 95%;
 }
 
 .testimonial .name {
@@ -318,4 +422,44 @@ section.mission {
   .gallery .container {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+/*** Footer Mobile ***/
+
+.footer {
+  background-color: #90d4c6;
+  padding: 6.4rem 0;
+}
+
+.footer-content {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-nav-links {
+  color: #458d7e;
+  display: flex;
+  justify-content: center;
+  gap: 5.7rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.129px;
+  margin-top: 4rem;
+  margin-bottom: 8.8rem;
+}
+
+.footer-nav-link:hover {
+  color: white;
+}
+
+.footer-social-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.footer-social-nav-link:hover path {
+  fill: white;
 }
