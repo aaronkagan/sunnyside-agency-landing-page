@@ -270,6 +270,7 @@ section.mission {
   line-height: 3.2rem;
   letter-spacing: -0.129px;
   margin: 3.2rem 0;
+  max-width: 95%;
 }
 
 .testimonial .name {
