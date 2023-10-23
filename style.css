@@ -183,7 +183,7 @@ section.mission {
 .cell-content {
   display: flex;
   flex-direction: column;
-  padding: 15rem 5%;
+  padding: 15rem 5rem;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
@@ -240,7 +240,7 @@ section.mission {
 
 .overlay-cell-content {
   position: absolute;
-  bottom: 15%;
+  top: 65%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -262,6 +262,31 @@ section.mission {
   letter-spacing: -0.114px;
 }
 
+/*** Mission Section Half Screen ***/
+
+@media screen and (min-width: 769px) and (max-width: 1350px) {
+  .cell-content {
+    padding: 0 5rem;
+    gap: 1rem;
+  }
+
+  .cell-content h2 {
+    font-size: 2.5rem;
+  }
+  .cell-content p {
+    font-size: 1.6rem;
+  }
+
+  .overlay-cell-content {
+    top: 55%;
+    gap: 1rem;
+  }
+
+  .overlay-cell-content p {
+    font-size: 1.4rem;
+  }
+}
+
 /*** Mission Section Desktop ***/
 
 @media screen and (min-width: 768px) {
@@ -271,7 +296,6 @@ section.mission {
 
   .cell-content {
     justify-content: center;
-    padding: 0 25%;
     text-align: left;
   }
 
@@ -286,6 +310,19 @@ section.mission {
 
   .img-desktop {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1351px) {
+  .cell-content {
+    padding: 0 25%;
+  }
+  .overlay-cell-content {
+    padding: 0 30%;
+    top: 60%;
+  }
+  .overlay-cell-content p {
+    font-size: 1.6rem;
   }
 }
 
