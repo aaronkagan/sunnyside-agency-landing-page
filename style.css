@@ -426,6 +426,10 @@ section.mission {
 
 /*** Footer Mobile ***/
 
+.footer-logo path {
+  fill: #2c7566;
+}
+
 .footer {
   background-color: #90d4c6;
   padding: 6.4rem 0;
