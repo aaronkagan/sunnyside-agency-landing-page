@@ -16,8 +16,11 @@
 
 ### Screenshots
 
+Desktop
 ![Desktop view](desktop-view.png)
+Mobile
 ![Mobile view](mobile-view.png)
+Mobile Menu
 ![Mobile menu](mobile-menu.png)
 
 ## My process
@@ -38,7 +41,7 @@ This project taught me a lot about:
 - Text responsive scalability
 - Text overlays on top of images
 
-## Contact
+## Author
 
 - Portfolio - [aaronkagan.dev](https://www.aaronkagan.dev)
 - X - [@aaronkagandev](https://www.twitter.com/aaronkagandev)
