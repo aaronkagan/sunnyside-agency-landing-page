@@ -18,7 +18,7 @@
 
 ### Links
 
-- Live Demo: [Live Demo](https://akagansunnylandingpage.netlify.app/)
+- Live Demo: <a href="https://akagansunnylandingpage.netlify.app/" target="_blank">Sunnyside Landing Page</a>
 
 ## My process
 
