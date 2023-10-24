@@ -3,22 +3,22 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshots](#screenshots)
   - [Links](#links)
+  - [Screenshots](#screenshots)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
+
+### Links
+
+- Live Demo: <a href="https://akagansunnylandingpage.netlify.app/" target="_blank">Sunnyside Landing Page</a>
 
 ### Screenshots
 
 ![Desktop view](desktop-view.png)
 ![Mobile view](mobile-view.png)
 ![Mobile menu](mobile-menu.png)
-
-### Links
-
-- Live Demo: <a href="https://akagansunnylandingpage.netlify.app/" target="_blank">Sunnyside Landing Page</a>
 
 ## My process
 
