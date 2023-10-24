@@ -18,7 +18,7 @@
 
 ### Links
 
-- Live Demo: [Live Demo](https://app.netlify.com/sites/akagansunnylandingpage/overview)
+- Live Demo: [Live Demo](https://akagansunnylandingpage.netlify.app/)
 
 ## My process
 
